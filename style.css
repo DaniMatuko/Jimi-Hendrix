@@ -1,12 +1,12 @@
-body {
+* {
     margin: 0;
     padding: 0;
 }
 
 .container {
     height: 100%;
-    background-color: rgb(198, 194, 255);
-    padding: 50px;
+    width: 100%;
+    background-color: #1a1a1a;
 }
 
 .nav-bar {
@@ -16,6 +16,7 @@ body {
     background: rgba(32, 43, 66);
     text-align: center;
     z-index: 1;
+    padding: 10px;
 }
 
 .nav-bar ul li {
@@ -30,10 +31,79 @@ body {
     text-decoration: none;
 }
 
+h1 {
+    font-size: 5rem;
+    color: black;
+    text-shadow: blue 3px 3px 15px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.5rem;
+    color: rgb(32, 13, 13);
+    font-weight: bold;
+}
+
 .section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+#home {
+    background-image: url("images/home-guitars.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+#about {}
+
+#contact {
+    background-color: white;
+}
+
+.startLearning {
+    box-sizing: border-box;
+    position: relative;
+    height: 50px;
+    width: 150px;
+    margin-top: 30px;
+    background-color: lightblue;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.btnEffect {
+    box-sizing: border-box;
+    position: absolute;
+    border: 25px solid #34495e;
+    border-radius: 5px;
+    height: 50px;
+    width: 150px;
+    top: 0;
+    transition: 1s ease;
+}
+
+.startLearning span {
+    position: relative;
+    z-index: 1;
+    color: whitesmoke;
+}
+
+.btnEffect:hover .btnEffect {
+    border-color: lightblue;
+    border: 0;
+}
+
+.startLearning:hover span {
+    color: #34495e;
 }
