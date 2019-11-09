@@ -4,13 +4,16 @@
 }
 
 body {
+    position: absolute;
     font-family: 'Heebo', 'Tinos', serif;
     overflow-x: hidden;
+    position: relative;
 }
 
 .container {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     height: 100%;
     width: 100%;
     background-color: #1a1a1a;
@@ -60,11 +63,13 @@ h1 {
 p {
     font-size: 1.5rem;
     font-weight: bold;
+    min-width: 500px;
 }
 
 .section {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -94,17 +99,30 @@ p {
     color: #a5a4a4;
 }
 
-.about-pic {
-    background: url("images/about-jimi.jpg") no-repeat;
+.about-pic,
+.contact-pic {
     width: 100%;
     height: 100%;
+    flex: 1;
+    min-width: 500px;
     background-size: cover;
+}
+
+.about-pic {
+    background: url("images/about-jimi.jpg") no-repeat;
+}
+
+.contact-pic {
+    background: url("images/black-guitar.jpg") no-repeat;
+    background-size: 90% 100%;
+    background-position-x: right;
 }
 
 #info {
     width: 100%;
     text-align: right;
     padding: 4rem;
+    flex: 1;
 }
 
 #info h1 {
@@ -161,4 +179,6 @@ p {
     text-align: center;
     padding: 10px;
     line-height: 100px;
+    position: absolute;
+    bottom: 0;
 }
