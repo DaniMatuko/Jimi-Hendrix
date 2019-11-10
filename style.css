@@ -1,164 +1,195 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Heebo', 'Tinos', serif;
-    overflow-x: hidden;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    background-color: #1a1a1a;
-}
-
-
-/*navigation-bar*/
-
-.nav-bar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 35px;
-    background: rgba(32, 43, 66);
-    background: linear-gradient(90deg, #141e30 25%, #243b55 50%, #141e30 100%);
-    text-align: center;
-    z-index: 1;
-    padding: 10px;
-}
-
-.nav-bar ul li {
-    display: inline;
-}
-
-.nav-bar ul li a {
-    color: white;
-    font-size: 1.5rem;
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-    text-decoration: none;
-    transition: 0.8s ease-out;
-}
-
-.nav-bar ul li a:hover {
-    text-shadow: 3px 3px 9px;
-    font-size: 1.6em;
-    letter-spacing: 0.3rem;
-}
-
-h1 {
-    font-size: 5rem;
-    color: black;
-    text-shadow: blue 3px 3px 15px;
-    margin-bottom: 15px;
-}
-
-p {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-#home {
-    background: url("images/home-guitars.jpg") no-repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.8;
-}
-
-#home p {
-    color: #213750;
-    background: linear-gradient(white, transparent 95%);
-    box-shadow: rgba(68, 52, 52, 0.596) 5px 5px 2px;
-}
-
-#about {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    text-align: right;
-}
-
-#about p {
-    color: #a5a4a4;
-}
-
-.about-pic {
-    background: url("images/about-jimi.jpg") no-repeat;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-}
-
-#info {
-    width: 100%;
-    text-align: right;
-    padding: 4rem;
-}
-
-#info h1 {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-#contact {
-    display: flex;
-    flex-direction: row-reverse;
-    text-align: right;
-    background-color: white;
-}
-
-.startLearning {
-    box-sizing: border-box;
-    position: relative;
-    height: 50px;
-    width: 150px;
-    margin-top: 30px;
-    border: 1px solid #34495e;
-    background: white;
-    border-radius: 5px;
-    text-align: center;
-    line-height: 50px;
-    cursor: pointer;
-    letter-spacing: 1px;
-    transition: all 1s ease;
-}
-
-.startLearning span {
-    position: relative;
-    z-index: 1;
-    color: #34495e;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.startLearning:hover {
-    background: #34495e;
-}
-
-.startLearning:hover span {
-    color: white;
-    font-size: 1.25rem;
-}
-
-#footer {
-    height: 100px;
-    width: 100%;
-    background: linear-gradient(90deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
-    color: white;
-    font-weight: 400;
-    text-align: center;
-    padding: 10px;
-    line-height: 100px;
-}
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                font-family: 'Heebo', 'Tinos', serif;
+                overflow-x: hidden;
+            }
+            
+            .container {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 100%;
+                background-color: #1a1a1a;
+            }
+            /*navigation-bar*/
+            
+            .nav-bar {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                height: 35px;
+                background: rgba(32, 43, 66);
+                background: linear-gradient(90deg, #141e30 25%, #243b55 50%, #141e30 100%);
+                text-align: center;
+                z-index: 1;
+                padding: 10px;
+            }
+            
+            .nav-bar ul li {
+                display: inline;
+            }
+            
+            .nav-bar ul li a {
+                color: white;
+                font-size: 1.5rem;
+                margin-right: 1.5rem;
+                margin-left: 1.5rem;
+                text-decoration: none;
+                transition: 0.8s ease-out;
+            }
+            
+            .nav-bar ul li a:hover {
+                text-shadow: 3px 3px 9px;
+                font-size: 1.6em;
+                letter-spacing: 0.3rem;
+            }
+            
+            h1 {
+                font-size: 5rem;
+                color: black;
+                text-shadow: blue 3px 3px 15px;
+                margin-bottom: 15px;
+            }
+            
+            p {
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+            
+            .section {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                height: 100%;
+            }
+            
+            #home {
+                height: 100vh;
+                align-items: center;
+                flex-direction: column;
+                background: url("images/home-guitars.jpg") no-repeat;
+                background-position: center;
+                background-size: cover;
+                opacity: 0.8;
+            }
+            
+            #home p {
+                color: #213750;
+                background: linear-gradient(white, transparent 95%);
+                box-shadow: rgba(68, 52, 52, 0.596) 5px 5px 2px;
+            }
+            
+            #about {
+                display: flex;
+                flex-direction: row;
+                background-color: white;
+                text-align: right;
+            }
+            
+            #about p {
+                color: #a5a4a4;
+            }
+            
+            .about-pic,
+            .contact-pic {
+                background-size: cover;
+                flex: 1;
+            }
+            
+            img {
+                width: 100%;
+                height: 100%;
+                min-width: 150px;
+            }
+            
+            .info {
+                flex: 1;
+                text-align: right;
+                padding: 4rem;
+            }
+            
+            .info h1 {
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+            
+            #contact {
+                display: flex;
+                flex-direction: row-reverse;
+                text-align: right;
+                background-color: white;
+            }
+            
+            .startLearning {
+                box-sizing: border-box;
+                position: relative;
+                height: 50px;
+                width: 150px;
+                margin-top: 30px;
+                border: 1px solid #34495e;
+                background: white;
+                border-radius: 5px;
+                text-align: center;
+                line-height: 50px;
+                cursor: pointer;
+                letter-spacing: 1px;
+                transition: all 1s ease;
+            }
+            
+            .startLearning span {
+                position: relative;
+                z-index: 1;
+                color: #34495e;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+            
+            .startLearning:hover {
+                background: #34495e;
+            }
+            
+            .startLearning:hover span {
+                color: white;
+                font-size: 1.25rem;
+            }
+            
+            #footer {
+                height: 100px;
+                width: 100%;
+                background: linear-gradient(90deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+                color: white;
+                font-weight: 400;
+                text-align: center;
+                padding: 10px;
+                line-height: 100px;
+                margin-bottom: 0;
+            }
+            
+            @media screen and (max-width: 770px) {
+                .info {
+                    background: rgba(229, 255, 204, 0.945);
+                    min-width: 300px;
+                }
+                .section {
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+                h1 {
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+                .startLearning {
+                    width: 100px;
+                    height: 50px;
+                }
+                .startLearning span {
+                    font-size: 1rem;
+                    font-weight: lighter;
+                }
+            }
