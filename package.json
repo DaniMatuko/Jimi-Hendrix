@@ -1,0 +1,19 @@
+{
+  "name": "jimi-hendrix",
+  "version": "1.0.0",
+  "description": "Landing page",
+  "main": "animate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaniMatuko/Jimi-Hendrix.git"
+  },
+  "author": "Dani Matuko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaniMatuko/Jimi-Hendrix/issues"
+  },
+  "homepage": "https://github.com/DaniMatuko/Jimi-Hendrix#readme"
+}
