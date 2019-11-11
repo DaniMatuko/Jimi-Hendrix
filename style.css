@@ -113,9 +113,18 @@
                 min-width: 350px;
             }
             
+            .info p {
+                transform: translateY(200px);
+                opacity: 0;
+                transition: all 2s ease;
+            }
+            
             .info h1 {
                 text-align: center;
                 margin-bottom: 2rem;
+                opacity: 0;
+                transform: translateX(200px);
+                transition: 2s ease-out;
             }
             
             #contact {
@@ -168,6 +177,11 @@
                 line-height: 100px;
                 margin-bottom: 0;
             }
+            /*
+            
+            ///////  **  small screens **
+
+            */
             
             @media screen and (max-width: 770px) {
                 .nav-bar {
