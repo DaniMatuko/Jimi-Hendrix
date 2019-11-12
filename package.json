@@ -4,6 +4,7 @@
     "description": "Landing page",
     "main": "animate.js",
     "scripts": {
+        "start": "node index.js",
         "test": "animate.js"
     },
     "repository": {
