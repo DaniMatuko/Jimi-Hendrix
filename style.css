@@ -182,6 +182,79 @@
                 margin-bottom: 0;
             }
             /*
+
+
+            ----------form-contact--------
+            
+      */
+            
+            .connect {
+                width: 80%;
+                margin: 0 auto;
+            }
+            
+            .form-contact {
+                width: 100%;
+                font-family: "Arial", Times, serif;
+            }
+            
+            .form-contact-input {
+                width: 100%;
+                color: #292929;
+                font-size: 1rem;
+                background-color: #E9E9E9;
+                border: 1px solid #E9E9E9;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+                height: 1.5rem;
+                margin: 0.5em auto;
+                border-bottom: 1px solid #ccc;
+                border-left: 1px solid #ccc;
+                text-indent: 20px;
+            }
+            
+            .form-contact-textarea {
+                width: 100%;
+                color: #292929;
+                font-size: 18px;
+                background-color: #E9E9E9;
+                border: 1px solid #E9E9E9;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+                height: 10rem;
+                margin-bottom: 20px;
+                border-bottom: 1px solid #ccc;
+                border-left: 1px solid #ccc;
+                text-indent: 20px;
+                padding-top: 16px;
+                padding-left: 0;
+                padding-right: 0;
+                font-family: "Arial", Times, serif;
+            }
+            
+            .form-contact-button {
+                width: 100%;
+                font-size: 18px;
+                border-radius: 4px;
+                color: #fff;
+                height: 40px;
+                opacity: .8;
+                margin-bottom: 20px;
+                cursor: pointer;
+                background: rgb(37, 151, 62);
+                display: block;
+                border: none;
+                border-bottom: 1px solid #500707;
+                border-right: 1px solid #500707;
+                transition: 1s;
+            }
+            
+            .form-contact-button:hover {
+                opacity: 1;
+            }
+            /*
             
             ///////  **  small screens **
 
@@ -208,6 +281,7 @@
                     background: rgba(229, 255, 204, 0.945);
                     min-width: 150px;
                     padding: 4rem;
+                    height: 100vh;
                 }
                 .section {
                     flex-direction: column;
@@ -230,5 +304,8 @@
                     font-weight: lighter;
                     letter-spacing: normal;
                     line-height: 5px;
+                }
+                .connect {
+                    width: 100%;
                 }
             }
