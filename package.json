@@ -2,10 +2,9 @@
     "name": "jimi-hendrix",
     "version": "1.0.0",
     "description": "Landing page",
-    "main": "animate.js",
+    "main": "app.js",
     "scripts": {
-        "start": "node index.js",
-        "test": "animate.js"
+        "test": "app.js"
     },
     "repository": {
         "type": "git",
