@@ -4,7 +4,8 @@
     "description": "Landing page",
     "main": "app.js",
     "scripts": {
-        "test": "app.js"
+        "start": "node index.js"
+        "test": "index.js"
     },
     "repository": {
         "type": "git",
