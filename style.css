@@ -188,7 +188,9 @@
                     height: auto;
                 }
                 .nav-bar ul li a {
-                    font-size: 1rem;
+                    font-size: 0.3rem;
+                    margin-right: 1rem;
+                    margin-left: 1rem;
                 }
                 .nav-bar ul li a:hover {
                     text-shadow: 3px 3px 6px;
