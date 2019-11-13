@@ -29,6 +29,10 @@
                 padding: 10px;
             }
             
+            ul {
+                width: 100vw;
+            }
+            
             .nav-bar ul li {
                 display: inline;
             }
@@ -188,7 +192,7 @@
                     height: auto;
                 }
                 .nav-bar ul li a {
-                    font-size: 0.3rem;
+                    font-size: 1rem;
                     margin-right: 1rem;
                     margin-left: 1rem;
                 }
